@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    background: black;
+}
+
+.container_grid{
+    display: grid;
+    grid-template-areas: 'um dois tres';
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.grid_um{
+    grid-area: um;
+    /*background: rgb(118, 4, 212);*/
+}
+
+.grid_dois{
+    grid-area: dois;
+    /*background: rgb(45, 13, 228);*/
+
+    display: grid;
+    grid-template-areas: 'umA' 'doisA';
+    grid-template-rows: 15vh 85vh;
+}
+.grid_tres{
+    grid-area: tres;
+    /*background:rgb(58, 204, 14);*/
+}
+
+.msg{
+    margin-top: 10px;
+    grid-area: umA;
+    background-color: rgb(51, 51, 51);
+
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+
+    display: grid;
+    grid-template-areas: 'umB doisB tresB';
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.vaz_tela{
+    grid-area: umB;
+    background-color: black;
+}
+
+.msg_tela{
+    grid-area: doisB;
+    padding: 15px;
+    /*background:rgb(6, 36, 204);*/
+}
+
+.num_tela{
+    grid-area: tresB;
+    /*background:rgb(6, 204, 194);*/
+    padding: 15px;
+    background-color: black;
+}
+
+.container_jogo{
+    grid-area: doisA;
+    /*background:rgb(6, 204, 194);*/
+}
+
+.genius{  
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}
+
+.blue{
+    grid-area: azul;
+    background-color: rgb(4, 4, 255);
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: rgb(253, 2, 2);
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: rgba(255, 255, 0, 0.993);
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: verde;
+    background-color: rgb(30, 168, 30);
+    border-top-left-radius: 100%;
+}
+
+.apagado{
+    opacity: 0.4;
+}
+
+.config{
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: rgb(75, 72, 72);
+    margin: 0 auto;
+    position: absolute;
+    top: 355px;/*modificar para ficar melhor alinhado*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.start{
+    background-color: rgb(209, 157, 59);
+    height: 50px;
+    width: 100px;
+    border-radius: 100%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.start:hover{
+    background-color: orange;
+}
+
+.container_jogo,
+.config, 
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

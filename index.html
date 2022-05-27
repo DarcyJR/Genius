@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <audio src="som/0.wav" id="som0"></audio>
+    <audio src="som/1.wav" id="som1"></audio>
+    <audio src="som/2.wav" id="som2"></audio>
+    <audio src="som/3.wav" id="som3"></audio>
+    <audio src="som/erro.wav" id="som4"></audio>
+    <div class="container_grid">
+        <div class="grid_um">
+
+        </div>
+        <div class="grid_dois">
+
+            <div class="msg">
+                <div class="vaz_tela">
+                    
+                </div>
+                <div class="msg_tela">
+                </div>
+                <div class="num_tela">
+                </div>
+            </div>
+
+            <div class="container_jogo">
+                <div class="genius">
+                    <div id="0" class="blue apagado" onclick="entradaJogador(this.id)"></div>
+                    <div id="1" class="red apagado" onclick="entradaJogador(this.id)"></div>
+
+                    <div class="config">
+                        <div class="start" onclick="start()">START</div>
+                    </div>
+
+                    <div id="2" class="green apagado" onclick="entradaJogador(this.id)"></div>
+                    <div id="3" class="yellow apagado" onclick="entradaJogador(this.id)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid_tres">
+
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
